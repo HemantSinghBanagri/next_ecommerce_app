@@ -1,0 +1,16 @@
+.categoryContainer{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.line{
+    border: 1px solid black;
+    height: 1px;
+    width: 100%;
+    background-color: black;
+}
+
+
+.title{
+    margin-bottom: 10px;
+}
