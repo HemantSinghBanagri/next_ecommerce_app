@@ -1,14 +1,42 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from "./page.module.scss"
-import { useCart } from '@/app/cartcontext/cartContext'
+import { useCart } from '@/app/cartcontext/page'
 import Link from "next/link"
+import UserAuth from '@/app/userAuth/page'
+import { useAuth } from '@/app/authcontext/page'
 
 const ProductListData = ({productdata}) => {
   const {dispatch}=useCart()
+  const {user,login}=useAuth()
+  const [cartItems,setCartItems]=useState([])
 
   
+
+
+  const handleLogin = user => {
+    setLoggedInUser(user);
+    localStorage.setItem('loggedInUser',JSON.stringify(user))
+    console.log('user log in ',user)
+    console.log(localStorage)
+   
+   
+  };
   const addToCart=()=>{
+    
+
+    setCartItems(cartItems);
+    localStorage.setItem('loggedInUser',JSON.stringify(user))
+    
+   
+    if(user){
+      console.log('Adding to cart ',productdata)
     dispatch({type:"ADD_TO_CART",payload:productdata})
+
+    }else{
+      login({ username: 'exampleUser' });
+
+    }
+    
 
   }
     

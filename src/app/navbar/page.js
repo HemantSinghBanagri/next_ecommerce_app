@@ -51,9 +51,10 @@ const Navbar = () => {
             </Link> 
 
             <div className={styles.navLinks}>
+            <Link href="./cartcontext/cart">Shop Cart</Link>
             <Link href="/shop">Shop</Link>    
             <Link href="/userAuth">
-            <span onClick={togglecart}>login</span>
+            <span >login</span>
      
             
             </Link>

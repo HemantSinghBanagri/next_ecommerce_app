@@ -1,35 +1,35 @@
 
   
-  .dropdownContainer {
-    position: relative;
-    h2 {
-        cursor: pointer;
-      }
-  }
+  // // .dropdownContainer {
+  // //   position: relative;
+  // //   h2 {
+  // //       cursor: pointer;
+  // //     }
+  // // }
   
 
   
-  .dropdownContent {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1;
-  }
+  // // .dropdownContent {
+  // //   display: none;
+  // //   position: absolute;
+  // //   top: 100%;
+  // //   right: 0;
+  // //   background-color: #fff;
+  // //   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  // //   z-index: 1;
+  // // }
   
-  .dropdownContent button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    text-align: left;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-  }
+  // .dropdownContent button {
+  //   display: block;
+  //   width: 100%;
+  //   padding: 10px;
+  //   text-align: left;
+  //   border: none;
+  //   background-color: transparent;
+  //   cursor: pointer;
+  // }
   
-  .dropdownContent button:hover {
-    background-color: #f1f1f1;
-  }
+  // .dropdownContent button:hover {
+  //   background-color: #f1f1f1;
+  // }
   

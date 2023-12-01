@@ -3,7 +3,7 @@
 import React from 'react'
 import { useEffect,useState } from 'react'
 import ProductListData from './productListData/page'
-import { useCart } from '@/app/cartcontext/cartContext'
+import { useCart } from '@/app/cartcontext/page'
 
 
 import styles from "./page.module.scss"

@@ -10,7 +10,7 @@ const CartContext=createContext();
 const cartReducer=(state,action)=>{
     switch (action.type){
         case "ADD_TO_CART":
-            console.log('adding to cart',action.payload)
+            console.log('Reduce :adding to cart',action.payload)
             return{
                 ...state,
                 cartItems:[...state.cartItems,action.payload]

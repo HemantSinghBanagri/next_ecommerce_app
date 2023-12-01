@@ -1,9 +1,11 @@
 "use client"
 import React, { useState } from 'react'
 import styles from "./page.module.scss"
+import { useAuth } from '@/app/authcontext/page'
 
 const Login = ({onLogin }) => {
- 
+  
+  
 
   const [email,setEmail]=useState('')
   const [password,setPassword]=useState('')
@@ -34,6 +36,8 @@ const Login = ({onLogin }) => {
       setError('An error orrured')
 
     }
+
+    
 
   }
   return (

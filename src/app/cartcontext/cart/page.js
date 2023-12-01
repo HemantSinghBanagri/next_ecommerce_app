@@ -1,12 +1,13 @@
 "use client"
 import React from 'react'
-import { useCart } from '../cartContext'
+import { useCart } from '../page'
 import CartProduct from './cartProduct/page'
 
 const Cart= () => {
     const {state}=useCart()
+
     const {cartItems}=state
-    console.log(cartItems)
+    console.log("cart Iteam",state.cartItems)
 
   return (
     <div>
